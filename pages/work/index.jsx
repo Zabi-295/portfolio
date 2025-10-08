@@ -29,8 +29,10 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              tempora eligendi, quisquam tempore sint reiciendis.
+              I’ve worked on several real-world projects focusing on web and mobile app
+              development using the MERN Stack and Ionic Framework. My work includes
+              building responsive interfaces, connecting APIs, and deploying apps with
+              modern DevOps tools like Railway and Vercel.
             </motion.p>
           </div>
 

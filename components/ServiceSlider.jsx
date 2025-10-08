@@ -12,32 +12,36 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-
 const serviceData = [
   {
+    Icon: RxDesktop,
+    title: "Full-Stack Development",
+    description:
+      "Building complete web applications using the MERN Stack (MongoDB, Express, React, Node.js) with secure and scalable architecture.",
+  },
+  {
     Icon: RxCrop,
-    title: "Branding",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Ionic App Development",
+    description:
+      "Developing hybrid mobile apps with the Ionic Framework that deliver smooth performance on both Android and iOS platforms.",
   },
   {
     Icon: RxPencil2,
-    title: "Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    Icon: RxDesktop,
-    title: "Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Frontend Development",
+    description:
+      "Creating responsive, attractive, and user-friendly interfaces using HTML, CSS, Bootstrap, and TypeScript.",
   },
   {
     Icon: RxReader,
-    title: "Copywriting",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Backend & API Integration",
+    description:
+      "Designing and integrating RESTful APIs with Node.js and MongoDB to ensure reliable and efficient data management.",
   },
   {
     Icon: RxRocket,
-    title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Basic DevOps & Deployment",
+    description:
+      "Deploying applications using platforms like Railway, Vercel, and GitHub — ensuring smooth delivery and version control.",
   },
 ];
 

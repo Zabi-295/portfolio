@@ -3,56 +3,43 @@ import { useState } from "react";
 import CountUp from "react-countup";
 import {
   FaCss3,
-  FaFigma,
   FaHtml5,
   FaJs,
   FaReact,
-  FaWordpress,
+  FaNodeJs,
+  FaGithub,
+  FaBootstrap,
 } from "react-icons/fa";
 import {
-  SiAdobephotoshop,
-  SiAdobexd,
-  SiFramer,
-  SiNextdotjs,
+  SiMongodb,
+  SiExpress,
+  SiTypescript,
+  SiIonic,
+  SiFirebase,
+  SiVercel,
+  SiRailway,
 } from "react-icons/si";
 
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
 import { fadeIn } from "../../variants";
 
-//  data
+// updated data
 export const aboutData = [
   {
     title: "skills",
     info: [
       {
-        title: "Web Development",
-        icons: [
-          FaHtml5,
-          FaCss3,
-          FaJs,
-          FaReact,
-          SiNextdotjs,
-          SiFramer,
-          FaWordpress,
-        ],
+        title: "Frontend Development",
+        icons: [FaHtml5, FaCss3, FaBootstrap, FaJs, SiTypescript, FaReact, SiIonic],
       },
       {
-        title: "UI/UX Design",
-        icons: [FaFigma, SiAdobexd, SiAdobephotoshop],
-      },
-    ],
-  },
-  {
-    title: "awards",
-    info: [
-      {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
+        title: "Backend Development",
+        icons: [FaNodeJs, SiExpress, SiMongodb, SiFirebase],
       },
       {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        title: "Basic DevOps & Tools",
+        icons: [FaGithub, SiVercel, SiRailway],
       },
     ],
   },
@@ -60,16 +47,21 @@ export const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Full-Stack Developer (Freelance / Personal Projects)",
+        stage: "2023 - Present",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title: "App Developer - Learn2Earn Software House (Internship)",
+        stage: "2022 - 2023",
       },
+    ],
+  },
+  {
+    title: "education",
+    info: [
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "BS Software Engineering - University of Sahiwal, Pakistan",
+        stage: "2022 - 2026",
       },
     ],
   },
@@ -77,16 +69,12 @@ export const aboutData = [
     title: "credentials",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title: "MERN Stack Development - Self Taught & Practice Projects",
+        stage: "2023",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Ionic Framework Certification (App Development)",
+        stage: "2023",
       },
     ],
   },
@@ -105,7 +93,7 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px]"
+        className="hidden xl:flex absolute bottom-0 -left-[250px]"
       >
         <Avatar />
       </motion.div>
@@ -120,69 +108,22 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Captivating <span className="text-accent">stories</span> birth
-            magnificent designs.
+            Building modern <span className="text-accent">web & mobile</span> apps with MERN & Ionic.
           </motion.h2>
+
           <motion.p
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I begin freelancing as a developer. Since then, I've
-            done remote work for agencies, consulted for startups, and
-            collabrated on digital products for business and consumer use.
+            I’m Jahanzaib Alam, a passionate Full-Stack Developer from Pakistan 🇵🇰,
+            currently pursuing a Bachelor’s degree in Software Engineering at the University of Sahiwal.
+            I build responsive, high-performing applications using the MERN Stack and Ionic Framework.
+            I also have basic experience in DevOps, including Git, GitHub, and deployment on Railway & Vercel.
           </motion.p>
 
-          {/* counters */}
-          <motion.div
-            variants={fadeIn("right", 0.6)}
-            initial="hidden"
-            animate="show"
-            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
-          >
-            <div className="flex flex-1 xl:gap-x-6">
-              {/* experience */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} />
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Years of experience.
-                </div>
-              </div>
-
-              {/* clients */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} />
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Satisfied clients.
-                </div>
-              </div>
-
-              {/* projects */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={650} duration={5} />
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Finished projects.
-                </div>
-              </div>
-
-              {/* awards */}
-              <div className="relative flex-1">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={8} duration={5} />
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Winning awards.
-                </div>
-              </div>
-            </div>
-          </motion.div>
+          {/* counters (optional, disabled) */}
         </div>
 
         {/* info */}

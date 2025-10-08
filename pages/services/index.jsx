@@ -5,7 +5,34 @@ import Circles from "../../components/Circles";
 import ServiceSlider from "../../components/ServiceSlider";
 import { fadeIn } from "../../variants";
 
-export const serviceData = [];
+// === Updated Service Data ===
+export const serviceData = [
+  {
+    title: "Full-Stack App Development",
+    description:
+      "Building modern, high-performance web and mobile applications using the MERN Stack (MongoDB, Express, React, Node.js)",
+  },
+  {
+    title: "Frontend Development",
+    description:
+      "Creating responsive and interactive user interfaces with HTML, CSS, Bootstrap, and TypeScript, ensuring smooth user experience across all devices.",
+  },
+  {
+    title: "Backend & API Integration",
+    description:
+      "Developing secure RESTful APIs and integrating databases using Node.js and MongoDB to deliver complete and scalable backend solutions.",
+  },
+  {
+    title: "Basic DevOps & Deployment",
+    description:
+      "Setting up environments, automating builds, and deploying applications using tools like Git, GitHub, Railway, and Vercel for smooth CI/CD workflows.",
+  },
+  {
+    title: "UI/UX & App Optimization",
+    description:
+      "Designing clean and intuitive interfaces inspired by modern trends, optimizing performance, and ensuring seamless cross-platform compatibility.",
+  },
+];
 
 const Services = () => {
   return (
@@ -22,8 +49,9 @@ const Services = () => {
               exit="hidden"
               className="h2 xl:mt-8"
             >
-              My services <span className="text-accent">.</span>
+              My <span className="text-accent">Services</span>
             </motion.h2>
+
             <motion.p
               variants={fadeIn("up", 0.4)}
               initial="hidden"
@@ -31,8 +59,10 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              tempora eligendi, quisquam tempore sint reiciendis.
+              I specialize in building scalable web and mobile applications with
+              clean design, robust backend, and smooth deployment workflows.
+              Every project I create focuses on performance, user experience,
+              and modern technologies.
             </motion.p>
           </div>
 

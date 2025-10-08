@@ -14,13 +14,13 @@ const workSlides = {
       images: [
         {
           title: "title",
-          path: "/thumb1.jpg",
+          path: "/Screenshot (57).png",  
           link: "http://example.com",
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
-          link: "http://example.com",
+          path: "/Screenshot (58).png",
+          link: "https://zabi-295.github.io/movie-search-app/",
         },
         {
           title: "title",

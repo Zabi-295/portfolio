@@ -20,8 +20,8 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Transforming Ideas <br /> Into{" "}
-            <span className="text-accent">Digital Reality</span>
+            Hi, Iam  <br /> Jahanzaib{" "}
+            <span className="text-accent">Alam</span>
           </motion.h1>
 
           {/* subtitle */}
@@ -32,10 +32,9 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate,
-            exercitationem harum, quia nulla temporibus deleniti libero veniam
-            vero beatae numquam ducimus illum ab similique ipsam tempore fugit
-            quod laudantium debitis.
+           I’m a Software Engineering student from Pakistan  with a strong passion for coding, problem-solving, and building real-world digital products.  
+My focus is on developing scalable, efficient, and user-friendly applications using MERN (MongoDB, Express, React, Node.js) and Ionic Framework for hybrid mobile apps.
+
           </motion.p>
 
           {/* btn */}
